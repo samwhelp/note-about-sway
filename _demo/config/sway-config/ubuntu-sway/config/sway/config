@@ -33,7 +33,7 @@ set $use_profile sway-profile-main
 ### Head: Profile / Include
 ##
 
-include $HOME/.config/sway/profile/$use_profile/main.conf
+include $HOME/.config/sway/profile/$use_profile/profile.conf
 
 ##
 ### Tail: Profile / Include
