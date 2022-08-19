@@ -18,6 +18,8 @@ sway_config_install () {
 
 	sway_config_install_new
 
+	sway_config_install_script
+
 	echo
 
 }
@@ -60,6 +62,22 @@ sway_config_install_new () {
 
 
 }
+
+sway_config_install_script () {
+
+	echo
+	echo "##"
+	echo "## Config: sway_config_install_script"
+	echo "##"
+	echo
+
+	echo "mkdir -p $HOME/bin"
+	mkdir -p "$HOME/bin"
+
+	echo "install -Dm755 ./config/bin/swayworkspace $HOME/.config/bin/swayworkspace"
+	install -Dm755 "./config/bin/swayworkspace" "$HOME/.config/bin/swayworkspace"
+}
+
 ##
 ### Tail: sway_config_install
 ################################################################################
