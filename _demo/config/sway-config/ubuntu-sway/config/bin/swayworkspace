@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
+
+##
+## * https://github.com/swaywm/sway/issues/4928#issuecomment-586116020
+## * https://github.com/aviau/dotfiles/blob/master/.config/sway/config
+## * https://github.com/aviau/dotfiles/blob/master/bin/swayworkspace
+##
+
 # swayworkspace provides custom workspace management for sway.
-# 
+#
 # Navigating to the previous/next workspace of the current output:
 #   swayworkspace navigate [previous|next]
 #
@@ -16,12 +23,12 @@
 #
 #
 # Example Sway configuration:
-# 
+#
 #   exec_always swayworkspace startup
 #   bindsym $mod+1 exec swayworkspace navigate 1
 #
 #   bindsym $mod+Shift+1 exec swayworkspace move 1
-# 
+#
 #   bindsym $mod+right exec swayworkspace navigate next
 #   bindsym $mod+left exec swayworkspace navigate previous
 
