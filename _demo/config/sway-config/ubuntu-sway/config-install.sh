@@ -14,11 +14,13 @@ sway_config_install () {
 	echo "##"
 	echo
 
+	sway_config_install_script
+
 	sway_config_install_backup
 
 	sway_config_install_new
 
-	sway_config_install_script
+
 
 	echo
 
@@ -74,8 +76,8 @@ sway_config_install_script () {
 	echo "mkdir -p $HOME/bin"
 	mkdir -p "$HOME/bin"
 
-	echo "install -Dm755 ./config/bin/swayworkspace $HOME/.config/bin/swayworkspace"
-	install -Dm755 "./config/bin/swayworkspace" "$HOME/.config/bin/swayworkspace"
+	echo "install -Dm755 ./config/bin/swayworkspace $HOME/bin/swayworkspace"
+	install -Dm755 "./config/bin/swayworkspace" "$HOME/bin/swayworkspace"
 }
 
 ##
