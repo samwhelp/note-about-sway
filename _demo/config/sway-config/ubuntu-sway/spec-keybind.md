@@ -1,5 +1,5 @@
 
-# I3WM / Keybind / User
+# Sway / Keybind / User
 
 
 ## Subject

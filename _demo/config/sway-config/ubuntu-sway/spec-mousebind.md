@@ -1,5 +1,5 @@
 
-# I3WM / Mousebind / User
+# Sway / Mousebind / User
 
 
 ## Subject
