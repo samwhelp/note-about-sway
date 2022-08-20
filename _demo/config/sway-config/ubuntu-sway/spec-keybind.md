@@ -23,13 +23,16 @@
 * i3 User’s Guide / [6.20. Reloading/Restarting/Exiting](https://i3wm.org/docs/userguide.html#_reloading_restarting_exiting)
 * i3 User’s Guide / [6.1. Executing applications (exec)](https://i3wm.org/docs/userguide.html#exec)
 
-| Keybind           | Action          | Command         |
-| ----------------- | --------------- | --------------- |
-| `Alt + Ctrl + c`  | Reload   | `reload` (i3 builtin)  |
-| `Alt + Shift + c` | Restart  | `restart` (i3 builtin) |
-| `Alt + Shift + x` | Logout   | `"i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"` (i3 builtin) |
-| `Alt + Shift + z` | Shutdown | `systemctl poweroff`   |
+| Keybind           | Action          | Command                  |
+| ----------------- | --------------- | ------------------------ |
+| `Alt + Shift + c` | Restart         | `restart` (sway builtin) |
+| `Alt + Shift + x` | Logout          | `wlogout -p layer-shell` |
+| `Alt + Shift + z` | Shutdown        | `wlogout -p layer-shell` |
 
+
+| Keybind           | Action          | Command                  |
+| ----------------- | --------------- | ------------------------ |
+| `Alt + F1`        | Main Menu       | `nwg-drawer`             |
 
 ## Launch Terminal
 
