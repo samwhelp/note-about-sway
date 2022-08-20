@@ -16,12 +16,11 @@
 * [Workspace Control](#workspace-control)
 
 
-
 ## System Control
 
-* [config snippet](config/i3/gen/i3wm-gen-rc/Section/Subject/System/Keybind/Base.conf)
 * i3 User’s Guide / [6.20. Reloading/Restarting/Exiting](https://i3wm.org/docs/userguide.html#_reloading_restarting_exiting)
 * i3 User’s Guide / [6.1. Executing applications (exec)](https://i3wm.org/docs/userguide.html#exec)
+* [config snippet](config/sway/common/keybind/sway-keybind-main/keybind.m/System/Base.conf)
 
 | Keybind           | Action          | Command                  |
 | ----------------- | --------------- | ------------------------ |
@@ -30,9 +29,12 @@
 | `Alt + Shift + z` | Shutdown        | `wlogout -p layer-shell` |
 
 
+* [config snippet](config/sway/common/keybind/sway-keybind-main/keybind.m/System/Menu.conf)
+
 | Keybind           | Action          | Command                  |
 | ----------------- | --------------- | ------------------------ |
 | `Alt + F1`        | Main Menu       | `nwg-drawer`             |
+
 
 ## Launch Terminal
 
