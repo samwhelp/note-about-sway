@@ -573,14 +573,20 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q -D pulse sset Master
 ### Head: Keybind / Wallpaper / Select
 ##
 
+
+##
+## * https://github.com/samwhelp/note-about-fzf/tree/gh-pages/_demo/project/wallpaper-select/wallpaper-select-swaybg
+##
+
+
 ## Wallpaper Select Shuf
 ## Alt + w
-bindsym Mod1+w exec --no-startup-id wallpaper-select-sway shuf_favorite
+bindsym Mod1+w exec --no-startup-id wallpaper-select-swaybg shuf_favorite
 
 
 ## Wallpaper Select Default
 ## Alt + Ctrl + w
-bindsym Mod1+Ctrl+w exec --no-startup-id wallpaper-select-sway default
+bindsym Mod1+Ctrl+w exec --no-startup-id wallpaper-select-swaybg default
 
 
 ##
@@ -1212,8 +1218,31 @@ for_window [app_id="mate-volume-control"] floating enable
 
 exec ~/.azotebg
 
+
+##
+## $ cat ~/.azotebg
+##
+## ``` sh
+## #!/usr/bin/env bash
+## pkill swaybg
+## swaybg -o '*' -i "$HOME/Pictures/Wallpaper/default.jpg" -m "fill" &
+## ```
+##
+
+
 ##
 ### Tail: Autostart / Wallpaper / azotebg
+################################################################################
+
+
+################################################################################
+### Head: Autostart / Script / autostart
+##
+
+exec ~/.config/sway/autostart
+
+##
+### Tail: Autostart / Script / autostart
 ################################################################################
 
 
