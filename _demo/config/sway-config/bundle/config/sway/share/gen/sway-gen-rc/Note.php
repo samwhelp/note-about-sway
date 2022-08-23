@@ -7,6 +7,8 @@
 ##
 ## Default config for sway
 ##
+## /etc/sway/config
+##
 ## Copy this to ~/.config/sway/config and edit it to your liking.
 ##
 ## Read `man 5 sway` for a complete reference.
