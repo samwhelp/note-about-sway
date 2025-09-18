@@ -684,6 +684,7 @@ bindsym Mod4+Shift+q kill
 
 ## https://i3wm.org/docs/userguide.html#manipulating_layout
 
+
 ## Window toggle floating or tited
 ## Win + n
 bindsym Mod4+n floating toggle
@@ -692,6 +693,12 @@ bindsym Mod4+n floating toggle
 ## Window toggle floating or tited
 ## Win + `
 bindsym Mod4+grave floating toggle
+
+
+## Window toggle floating or tited
+## Win + Esc
+bindsym Mod4+Escape floating toggle
+
 
 ##
 ### Tail: Keybind / Window / FloatingToggle
