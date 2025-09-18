@@ -447,20 +447,48 @@ bindsym Mod4+w layout toggle tabbed split
 
 
 ################################################################################
-### Head: Keybind / Screenshot
+### Head: Keybind / Screenshot / ViaGrimshot
 ##
 
-## Screenshot
-## Print
-#bindsym Print exec --no-startup-id scrot
-
-
-## Screenshot Selected Area
-## Alt + Print
-#bindsym Mod1+Print exec --no-startup-id scrot -s
 
 ##
-### Tail: Keybind / Screenshot
+## ## Screenshot
+##
+## `Print`
+##
+
+bindsym Print exec --no-startup-id grimshot save screen
+
+
+##
+## ## Screenshot Control
+##
+## `Alt + Print`
+##
+
+bindsym Mod1+Print exec --no-startup-id grimshot save anything
+
+
+##
+## ## Screenshot Current Window
+##
+## `Win + Print`
+##
+
+bindsym Mod4+Print exec --no-startup-id grimshot save active
+
+
+##
+## ## Screenshot Selected Area
+##
+## `Ctrl + Print`
+##
+
+bindsym Ctrl+Print exec --no-startup-id grimshot save area
+
+
+##
+### Tail: Keybind / Screenshot / ViaGrimshot
 ################################################################################
 
 
